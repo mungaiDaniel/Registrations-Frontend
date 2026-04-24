@@ -420,13 +420,31 @@ footer a{color:var(--gold);text-decoration:none}
           <strong>Room payments:</strong> Pay via <strong>Poshi Biashara: 0721 293392</strong> after your room is confirmed.
         </div>
         <div class="field">
-          <label>Do you require accommodation? <span class="req">*</span></label>
+          <label>Do you already have accommodation arranged? <span class="req">*</span></label>
           <div class="pills">
-            <div class="pill"><input type="radio" name="accom" id="acY" value="Yes" onchange="cond('accomRow',true)"><label for="acY">Yes</label></div>
-            <div class="pill"><input type="radio" name="accom" id="acN" value="No" onchange="cond('accomRow',false)"><label for="acN">No</label></div>
+            <div class="pill"><input type="radio" name="accom" id="acY" value="Yes" onchange="cond('accomRow',false)"><label for="acY">Yes — I have accommodation</label></div>
+            <div class="pill"><input type="radio" name="accom" id="acN" value="No" onchange="cond('accomRow',true)"><label for="acN">No — I need accommodation</label></div>
           </div>
         </div>
         <div class="cond" id="accomRow">
+          <div class="notice green">
+            <strong>🏨 Accommodation Details (KES & USD)</strong><br><br>
+            <strong>Jewel House</strong><br>
+            Single Room — <strong>KES 4,000</strong> / ~USD 31 per night<br>
+            Couple Room — <strong>KES 7,000</strong> / ~USD 54 per night<br><br>
+            <strong>Executive Rooms</strong><br>
+            Executive Single — <strong>KES 9,000</strong> / ~USD 69 per night<br>
+            Executive Couple — <strong>KES 12,000</strong> / ~USD 92 per night<br><br>
+            <strong>Twin Rooms</strong><br>
+            Twin (Single Occupancy) — <strong>KES 6,000</strong> / ~USD 46 per night<br>
+            Twin (Couple) — <strong>KES 7,000</strong> / ~USD 54 per night<br><br>
+            <strong>Dormitory</strong><br>
+            Dormitory (8 people per room) — <strong>KES 1,800</strong> / ~USD 14 per night<br><br>
+            <strong>Luxury Option</strong><br>
+            Luxury 3-Bedroom House — <strong>KES 20,000</strong> / ~USD 154 per night<br><br>
+            <strong>📌 Notes</strong><br>
+            USD values are approximate (based on ~KES 130 = 1 USD). Final payment is in Kenyan Shillings (KES).
+          </div>
           <div class="field">
             <label>Room Preference <span class="req">*</span></label>
             <select id="roomType">
